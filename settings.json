@@ -8,7 +8,6 @@
     "editor.lineHeight": 24,
     "editor.fontLigatures": true,
     
-    // Increases terminal font size
     "terminal.integrated.fontSize": 14,
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
@@ -16,7 +15,6 @@
     "workbench.editor.tabSizing": "shrink",
     "explorer.compactFolders": false,
     
-    // Editor indentation settings
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.detectIndentation": true,
@@ -24,7 +22,7 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    // Formatter
+
     "prettier.eslintIntegration": true,
     "prettier.tabWidth": 2,
     "prettier.semi": false,
