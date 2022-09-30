@@ -1,13 +1,13 @@
 {
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Fira Code",
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontWeight": "400",
     "editor.fontSize": 15,
     "editor.lineHeight": 24,
     "editor.fontLigatures": true,
-
+  
     // Increases terminal font size
     "terminal.integrated.fontSize": 14,
     "editor.minimap.enabled": false,
@@ -15,36 +15,76 @@
     "editor.wordWrap": "on",
     "workbench.editor.tabSizing": "shrink",
     "explorer.compactFolders": false,
-    
+  
     // Editor indentation settings
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "editor.detectIndentation": true,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+      "source.fixAll.eslint": true
     },
-    
-    // Formatter   
-    "prettier.eslintIntegration": true,
+  
+    // Formatter
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "prettier.tabWidth": 2,
     "prettier.semi": false,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "none",
     "prettier.arrowParens": "avoid",
     "prettier.endOfLine": "auto",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+  
+    "[prisma]": {
+      "editor.formatOnSave": true
+    },
+  
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "html": "html"
+    },
+  
+    "css.lint.unknownAtRules": "ignore",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
     "security.workspace.trust.untrustedFiles": "open",
     "launch": {
-        "configurations": [],
-        "compounds": []
+      "configurations": [],
+      "compounds": []
     },
-    "git.autofetch": true
+    "git.autofetch": true,
+    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "tabnine.experimentalAutoImports": true,
+    "editor.guides.bracketPairs": "active",
+    "terminal.integrated.gpuAcceleration": "off",
+    "terminal.integrated.profiles.windows": {
+      "PowerShell": {
+        "source": "PowerShell",
+        "icon": "terminal-powershell"
+      },
+      "Command Prompt": {
+        "path": [
+          "${env:windir}\\Sysnative\\cmd.exe",
+          "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+      },
+      "Git Bash": {
+        "source": "Git Bash"
+      },
+      "Ubuntu (WSL)": {
+        "path": "C:\\Windows\\System32\\wsl.exe",
+        "args": [
+          "-d",
+          "Ubuntu"
+        ]
+      }
+    }
 }
